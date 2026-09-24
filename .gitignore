@@ -1,0 +1,22 @@
+# Private/raw data
+data/raw/*
+data/processed/*
+
+# Keep folders if needed
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
