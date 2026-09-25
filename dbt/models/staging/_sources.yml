@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: commissions_raw
+    description: "Raw commission data extracted from the original Excel workbook."
+    schema: raw
+
+    tables:
+      - name: commissions_excel
+        description: "Untransformed commission records from all yearly worksheets."

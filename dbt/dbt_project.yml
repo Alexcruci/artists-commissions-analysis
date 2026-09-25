@@ -1,0 +1,11 @@
+name: 'artists_commissions_analysis'
+version: '1.0.0'
+config-version: 2
+
+profile: 'artists_commissions_analysis'
+
+model-paths: ["models"]
+
+models:
+  artists_commissions_analysis:
+    +materialized: view

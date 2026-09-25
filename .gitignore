@@ -20,3 +20,8 @@ venv/
 Thumbs.db
 .vscode/
 .idea/
+
+# dbt generated files
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
