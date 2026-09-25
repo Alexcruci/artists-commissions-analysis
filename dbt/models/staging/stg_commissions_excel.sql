@@ -19,3 +19,9 @@ SELECT
     note_raw
 
 FROM {{ source('commissions_raw', 'commissions_excel') }}
+
+-- Exclude known source anomaly
+WHERE NOT (
+    source_sheet = '2026'
+    AND UPPER(BTRIM(COALESCE(mese_raw, ''))) = 'V-GEN'
+)
